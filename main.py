@@ -52,7 +52,7 @@ class Suprematism(QWidget):
             self.qp.drawPolygon(coords)
 
     def initUI(self):
-        self.setGeometry(300, 300, 700, 700)
+        self.setGeometry(300, 300, 900, 900)
         self.setWindowTitle('Рисование')
 
     def mousePressEvent(self, event):
@@ -60,7 +60,7 @@ class Suprematism(QWidget):
         if (event.button() == Qt.LeftButton):
             self.status = 1
         elif (event.button() == Qt.RightButton):
-            self.status = 3
+            self.status = 2
         self.drawf()
 
     def mouseMoveEvent(self, event):
