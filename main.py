@@ -60,7 +60,7 @@ class Suprematism(QWidget):
         if (event.button() == Qt.LeftButton):
             self.status = 1
         elif (event.button() == Qt.RightButton):
-            self.status = 2
+            self.status = 3
         self.drawf()
 
     def mouseMoveEvent(self, event):
